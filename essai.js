@@ -1,6 +1,5 @@
 let choix=true;
 function change1(){
-    let btn = document.getElementById("btn");
     if(choix==true){
         bloc1.style.backgroundColor = "green";
         bloc2.style.backgroundColor = "green";
