@@ -41,9 +41,6 @@ form.form-example {
   width: 20%;
   margin: auto;
 }
-div.form-example {
-  display: table-row;
-}
 label, input {
   display: table-cell;
   margin-bottom: 10px;
@@ -58,13 +55,17 @@ label {
   width: 100%;
   margin: auto;
 }
-@media screen  and (max-width:600px){
+@media screen  and (max-width:900px){
   img{
-    height: 200;
-    width: 700;
+    width: 200px;
+  }
+  body{
+    width: 380px;
+    background-color: aqua;
+    height: 840px;
   }
   .cadre{
-    width: 190%;
-    height: auto;
-  }
+    width:50px;
+    display: flex;
+ }
 }

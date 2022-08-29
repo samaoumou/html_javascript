@@ -30,13 +30,14 @@ function getValue() {
         alert("veuiller entrer ton prenom et nom");
     }
     var numéro = document.getElementById("number").value;
-    if (numéro.length==0){
+    if (numéro.length==0 ){
         alert("veuiller entrer ton numéro");
     }
     var mail = document.getElementById("email").value;
-    if (mail.length==0){
-        alert("veuiller entrer ton adresse mail ");
-    }
+        var index = mail.indexOf("@");    
+        if(index === -1){
+             alert("il manque @");
+        } 
     var para=document.getElementById('norme');
     para.innerHTML= nom_prenom+' '+numéro+' '+mail;
     let tab=[{prenom:nom_prenom,
@@ -51,5 +52,6 @@ function getValue() {
   //  divText.appendChild(pl);
 
 }
+
 
 
